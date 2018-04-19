@@ -7,6 +7,7 @@ https://www.youtube.com/watch?v=STwoa-9jxi0 - devtips tutorial (part 1) great in
 https://keithclark.co.uk/articles/pure-css-parallax-websites/ - parallax in just css and html
 
 ok-studios.de - cool example parallax effect
+
 pexels.com - free stock images, useful to test out parallax effects
 
 More CSS:
