@@ -1,0 +1,57 @@
+body, html {
+  min-height:100vh;
+}
+.img{
+  min-height:100%;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  position:relative;
+}
+.img1{
+  background-image:url('./img/space.jpg')
+}
+
+.App {
+  text-align: center;
+}
+
+.text{
+  background-color:#ddd;
+  color:#333;
+  font-size:150%;
+  padding:25px;
+  min-height:20vh;
+  line-height:1.5em;
+  padding-top:40px;
+}
+.parallax{
+  position:relative;
+}
+.banner{
+  position:absolute;
+  top:calc(50% - 20px);
+  width:100%;
+  text-align:center;
+  height:10vh;
+  font-size:250%;
+  color:#ddd;
+  font-weight:400;
+  letter-spacing: .5em;
+  padding:20px;
+
+}
+.span{
+  background-color:gray;
+  padding:20px 0 20px 20px;
+}
+.footer{
+  height:100vh;
+  background-color:#333;
+  color:#ddd;
+}
+.dark{
+  background-color:#333;
+  color:#ddd;
+}

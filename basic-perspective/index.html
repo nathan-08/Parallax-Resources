@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parallax__container {
+            height: 100vh;
+            perspective: 100px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .parallax__group {
+            position: relative;
+            height: 100vh;
+            transform-style: preserve-3d;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: palevioletred;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .wide__box {
+            height: 40%;
+            width: 100vw;
+            background-color: teal;
+            position: absolute;
+            top: 20%;
+            border: 2px solid pink;
+        }
+
+        .fore {
+            transform: translateZ(50px)
+        }
+
+        .backmost__scaled {
+            transform: translateZ(-100px) scale(2)
+        }
+
+        .back__scaled {
+            transform: translateZ(-50px) scale(1.5)
+        }
+
+        .fore__scaled {
+            transform: translateZ(50px) scale(.503)
+        }
+
+        .foremost__scaled {
+            transform: translateZ(75px) scale(.254)
+        }
+
+        .back {
+            transform: translateZ(-50px)
+        }
+
+        .back__scaled {
+            transform: translateZ(-50px) scale(1.5)
+        }
+
+        .group1 {
+            border-top: 2px solid pink;
+        }
+
+        .group2 {
+            border-top: 2px solid pink;
+        }
+
+        .group3 {
+            border-top: 2px solid pink;
+        }
+
+        .between {
+            z-index: 999;
+            background-color: white;
+            border-top: 2px solid pink;
+        }
+
+        .center__text {
+            text-align: center;
+        }
+
+        .mtn {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-top: 20vh;
+            /* padding-bottom: 100vh; */
+            width: 100vw;
+            left: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            height: 100vh;
+        }
+
+        .img__base {
+            transform: translateZ(-80px) scale(1.8);
+            background-image: url('./img/mountain.png');
+        }
+
+        .img__fore {
+            transform: translateZ(-20px) scale(1.2);
+            background-image: url('./img/treeline-midd.png');
+        }
+
+        .img__foremost {
+            transform: translateZ(-10px) scale(1.1);
+            background-image: url('./img/treeline-fore.png');
+            height: 100vh;
+            /* border-bottom: 2px solid magenta; */
+            padding-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="parallax__container">
+        <div class="parallax__group">
+
+        </div>
+        <div class="parallax__group group1">
+            group1 - translateZ, no scale
+            <div class="box fore">fore</div>
+            <div class="box">base</div>
+            <div class="box back">back</div>
+
+        </div>
+        <div class="parallax__group between"></div>
+        <div class="parallax__group group2">
+            group2 - translateZ, scaled
+            <div class="wide__box backmost__scaled center__text">| translateZ(-100px) scale(2) |</div>
+            <div class="wide__box back__scaled center__text">| translateZ(-50px) scale(1.5) |</div>
+            <div class="wide__box center__text center__text">| (no transform) |</div>
+            <div class="wide__box fore__scaled center__text">| translateZ(50px) scale(.503) |</div>
+            <div class="wide__box foremost__scaled center__text">| translateZ(75px) scale(.254) |</div>
+        </div>
+        <div class="parallax__group between"></div>
+        <div class="parallax__group group3">
+            group3 - translateZ, scale, images
+            <div class="img__base mtn"></div>
+            <div class="img__fore mtn"></div>
+            <div class="img__foremost mtn"></div>
+
+        </div>
+        <div class="parallax__group between" style="background-color:black;"></div>
+    </section>
+</body>
+
+</html>

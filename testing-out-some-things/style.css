@@ -1,0 +1,52 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+}
+p{
+    margin:0;  
+}
+
+.img{
+    min-height:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    position:relative;
+}
+.img1{
+    background-image:url('./img/space.jpg')
+}
+.img2{
+    background-image:url('./img/space1.jpg')
+}
+.img3{
+    background-image:url('./img/space2.jpg')
+}
+.sect{
+    background-color:#ddd;
+    
+    text-align:center;
+}
+.sect>div>.ptext{
+    padding: 20px;
+}
+.img span{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+    color:#eee;
+}
+.alt-color-p{
+    background-color:#424242;
+    color:#eee;
+}
