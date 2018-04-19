@@ -12,6 +12,8 @@
 * More CSS:
 Perspective, Transform, TranslateZ (The layered mountain app): https://github.com/Alan-Miller/parallax-css
 
+* StarWars CSS title scroll: http://blogs.sitepointstatic.com/examples/tech/css3-starwars/index.html
+
 ### React Libraries
 * https://www.npmjs.com/package/react-parallax
 * https://www.npmjs.com/package/react-scroll-parallax
@@ -19,5 +21,5 @@ Perspective, Transform, TranslateZ (The layered mountain app): https://github.co
 ### Included Folders
 
 * react-parallax - test app using the react-parallax library
-* basci-perspective - test app using css properties perspective, translateZ, scale
+* basic-perspective - test app using css properties perspective, translateZ, scale
 * testing-out-some-things - simple html page using background-attachment:fixed 
